@@ -239,3 +239,7 @@ npm run deploy       # Deploy to Cloudflare
 CI runs on every push and PR to `main` with 5 parallel jobs: `type-check`, `lint`, `format`, `test`, `shellcheck`. All must pass before merging.
 
 Dependabot is configured (`.github/dependabot.yml`) to keep npm dev dependencies and GitHub Actions up to date weekly.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
