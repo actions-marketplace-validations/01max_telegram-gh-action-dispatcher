@@ -10,7 +10,11 @@ updates:
         patterns: ['*']
         update-types: ['minor', 'patch']
 
+    reviewers:
+      - "01max"
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'weekly'
+    reviewers:
+      - "01max"
