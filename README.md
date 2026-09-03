@@ -200,7 +200,7 @@ cp worker/wrangler.toml.example worker/wrangler.toml
 | `GITHUB_TOKEN` | GitHub PAT with `repo` scope (needs access to every configured repo for `repository_dispatch`) |
 | `WEBHOOK_SECRET` | Random string used to protect admin endpoints (`/flush`, `/register-all`) |
 
-Bot tokens and per-bot webhook secrets are stored alongside each project in KV (`bot_token` and `webhook_secret` fields in `projects.json`). The `X-Telegram-Bot-Api-Secret-Token` header on incoming webhooks is matched against each project's `webhook_secret` to identify which bot received the message.
+Bot tokens and per-bot webhook secrets are stored alongside each project in KV (`bot_token` and `webhook_secret` fields in `projects.json`). The `X-Telegram-Bot-Api-Secret-Token` header on incoming webhooks is matched against each project's `webhook_secret` to identify which bot received the message. You have to generate `webhook_secret` for every new project manually with `openssl rand -hex 16` 
 
 ---
 
